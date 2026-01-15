@@ -104,5 +104,81 @@
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
     }
-</style>
+</style><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastika | Digital Card</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            width: 280px;
+            border: 1px solid #334155;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #25D366;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+        }
+        h1 { margin: 10px 0; font-size: 22px; letter-spacing: 1px; }
+        .title { color: #25D366; font-size: 13px; font-weight: bold; margin-bottom: 25px; text-transform: uppercase; }
+        
+        /* Gaya tombol umum */
+        .btn {
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            color: white;
+        }
+
+        /* Warna khusus WhatsApp */
+        .btn-wa { background: #25D366; }
+        .btn-wa:hover { background: #128C7E; transform: scale(1.05); }
+
+        /* Warna khusus Instagram */
+        .btn-ig { 
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+        }
+        .btn-ig:hover { transform: scale(1.05); filter: brightness(1.1); }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="foto-pastika.jpg" alt="Pastika" class="profile-img">
+        
+        <h1>PASTIKA</h1>
+        <div class="title">Web Developer & Entrepreneur</div>
+        
+        <a href="https://wa.me/6285971867820" class="btn btn-wa">WHATSAPP</a>
+        
+        <a href="https://instagram.com/tut_pastika" class="btn btn-ig" target="_blank">INSTAGRAM</a>
+    </div>
+
+</body>
+</html>
+
 
